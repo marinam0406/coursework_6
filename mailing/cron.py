@@ -53,3 +53,4 @@ def send_mailing():
 
         except smtplib.SMTPException as error:
             MailingStatus.objects.create(status='fail', mailing_response=error, mailing_list=mailing)
+
